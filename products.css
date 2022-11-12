@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* products nav style started */
+.products-nav {
+    display: flex;
+    justify-content: start;
+    padding: 20px 30px;
+    font-size: 28px;
+    border-top: 1px solid rgb(189, 35, 236);
+    background-color: black;
+}
+
+.products-nav a {
+    color: blueviolet;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.products-nav a:hover {
+    color: red;
+}
+
+/* products nav style ended */
+
+/* products part style started */
+.men-home-page {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: black;
+    gap: 17px;
+    padding: 10px;
+}
+
+img {
+    width: 100%;
+    height: 80%;
+    border-radius: 10px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+span {
+    font-size: 24px;
+    padding: 0px 5px;
+}
+
+.products-main-card {
+    border: 1px solid white;
+    border-radius: 12px;
+}
+
+@media screen and (max-width: 900px) {
+    .men-home-page {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    span {
+        font-size: 22px;
+    }
+}
+
+footer i {
+    color: black;
+}
+
+@media screen and (max-width: 600px) {
+
+    .men-home-page {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .products-main-card {
+        padding: 2px;
+    }
+
+    span {
+        font-size: 17px;
+    }
+}
+
+/* products part style ended */
